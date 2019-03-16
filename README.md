@@ -64,7 +64,7 @@ image and the filter.
 ### FFT vs time vs built-in
 The following figure compares the output of the built-in MATLAB function with the implemented
 time-based function and with the FFT-based function.
-
+![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/Report/images/Image%20Filtering/final_compare.jpg)
 
 ## Hybrid Image
 
@@ -74,3 +74,10 @@ pass filter on one image and a high pass image on the other one.
 
 ![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/hybrid_image.jpg)
 ![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/hybrid_image_scales.jpg)
+
+### Algorithm 
+1. Use the large blur filter on the first image to get the low frequencies of the first
+image.
+2. Use the large blur filter on the second image and subtract it from the second image to
+get the high frequencies.
+3. Add the two processed images together to get the hybrid image.
