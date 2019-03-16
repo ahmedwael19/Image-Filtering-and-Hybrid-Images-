@@ -39,7 +39,7 @@ The output of each filter on the cat image is as following:
 
 ### Algorithm
 
-1.Get the dimensions of the filter and the image.
+1. Get the dimensions of the filter and the image.
 2. If the reminder of the rows or the columns with 2 is equal to zero, throw an error.
 3. Pad the image using padarray function with the size equal to the ceil of both the
 number of rows/2 and the number of columns/2, in both directions.
