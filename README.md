@@ -7,7 +7,7 @@ This project was developed for Computer Vision class Spring 2019.
 - [Dataset](#Dataset)
 - [Image Filtering](#Image-Filtering)
   1. [Filters used](#Filters-used)
-  2. [Algorithm](#Finding-Donors-for-Charity)
+  2. [Algorithm](#Algorithm)
   3. [FFT vs time vs built-in](#FFT-vs-time-vs-built-in)
 - [Hybrid Image](#Mini-Projects)
     - [Results](#Results)
@@ -65,9 +65,7 @@ image and the filter.
 The following figure compares the output of the built-in MATLAB function with the implemented
 time-based function and with the FFT-based function.
 ![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/Report/images/Image%20Filtering/final_compare.jpg)
-
 ## Hybrid Image
-
 ### Results
 Hybrid images can be constructed by using 2 images with respectable shapes and using a low
 pass filter on one image and a high pass image on the other one.
