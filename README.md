@@ -32,6 +32,7 @@ There are 5 different filters used in this part as following:
 filter as it passes the high frequencies.
 
 The output of each filter on the cat image is as following:
+
 ![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/21.JPG)
 
 ### Algorithm
