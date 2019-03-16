@@ -7,17 +7,29 @@ This project was developed for Computer Vision class Spring 2019.
 ![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/hybrid_image_scales.jpg)
 
 ## Table of content
-- [Capstone Project](#Capstone-Project)
-- [Projects](#Projects)
-  1. [Predicting Boston Housing Prices](#Predicting-Boston-Housing-Prices)
-  2. [Finding Donors for Charity](#Finding-Donors-for-Charity)
-  3. [Dog Breed Classifier](#Dog-Breed-Classifier)
-  4. [Creating Customer Segments](#Creating-Customer-Segments)
-  5. [Teach a Quadcopter How to Fly](#Teach-a-Quadcopter-How-to-Fly)
-- [Mini Projects](#Mini-Projects)
-    - [Method Validation](#Method-Validation)
-    - [Supervised Learning](#Supervised-Learning)
-    - [Deep Learning](#Deep-Learning)
-    - [Unsupervised Learning](#Unsupervised-Learning)
-    - [Reinforcement Learning](#Reinforcement-Learning)
+- [Dataset](#Dataset)
+- [Image Filtering](#Image-Filtering)
+  1. [Filters used](#Filters-used)
+  2. [Algorithm](#Finding-Donors-for-Charity)
+  3. [FFT vs time vs built-in](#FFT-vs-time-vs-built-in)
+- [Hybrid Image](#Mini-Projects)
+    - [1. Results](#1. Results)
+    - [Algorithm](#Algorithm)
 
+## Dataset
+The dataset is simply 8 images that can be considered as 4 pairs of images as following:
+1. Dog and Cat
+2. Motorcycle and Bicycle
+3. Plane and Bird
+4. Fish and Submarine
+
+## Image Filtering
+
+### Filters used
+There are 5 different filters used in this part as following:
+1. Identity filter: which basically output the same image.
+2. Small blur filter: which removes the high frequency components from the image.
+3. Large blur filter: which does the same as small blur filter but more aggressively.
+4. Sobel filter: which is meanly used for edge detection.
+5. Laplacian filter and high pass filter: which does the opposite function of the blur
+filter as it passes the high frequencies
