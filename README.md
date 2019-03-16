@@ -3,9 +3,6 @@ In this project, image filtering techniques were utilized to implement a hybrid 
 
 This project was developed for Computer Vision class Spring 2019.
 
-![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/hybrid_image.jpg)
-![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/hybrid_image_scales.jpg)
-
 ## Table of content
 - [Dataset](#Dataset)
 - [Image Filtering](#Image-Filtering)
@@ -13,7 +10,7 @@ This project was developed for Computer Vision class Spring 2019.
   2. [Algorithm](#Finding-Donors-for-Charity)
   3. [FFT vs time vs built-in](#FFT-vs-time-vs-built-in)
 - [Hybrid Image](#Mini-Projects)
-    - [1. Results](#1. Results)
+    - [Results](#Results)
     - [Algorithm](#Algorithm)
 
 ## Dataset
@@ -63,3 +60,17 @@ image and the filter.
     2. Restart the convolution_column_index to be 1.
     3. Increment the convolution_row_index by 1.
 7. The output of this nested loop should be the convoluted image.
+
+### FFT vs time vs built-in
+The following figure compares the output of the built-in MATLAB function with the implemented
+time-based function and with the FFT-based function.
+
+
+## Hybrid Image
+
+### Results
+Hybrid images can be constructed by using 2 images with respectable shapes and using a low
+pass filter on one image and a high pass image on the other one.
+
+![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/hybrid_image.jpg)
+![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/hybrid_image_scales.jpg)
