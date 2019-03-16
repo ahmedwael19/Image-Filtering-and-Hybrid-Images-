@@ -32,4 +32,32 @@ There are 5 different filters used in this part as following:
 3. Large blur filter: which does the same as small blur filter but more aggressively.
 4. Sobel filter: which is meanly used for edge detection.
 5. Laplacian filter and high pass filter: which does the opposite function of the blur
-filter as it passes the high frequencies
+filter as it passes the high frequencies.
+
+The output of each filter on the cat image is as following:
+![](https://github.com/ahmedwael19/Image-Filtering-and-Hybrid-Images-/blob/master/21.jpg)
+
+### Algorithm
+Get the dimensions of the filter and the image.
+2. If the reminder of the rows or the columns with 2 is equal to zero, throw an error.
+3. Pad the image using padarray function with the size equal to the ceil of both the
+number of rows/2 and the number of columns/2, in both directions.
+4. Assign the last index of both the rows and the columns to be the number of rows of
+the filter – 1 “row_index_end” and the number of columns – 1 “column_index_end”.
+5. convolution_row_index = 1, and the same with columns.
+6. For rows = 1: number of rows in the image
+1. For columns = 1: number of columns in the image
+1. Make a small image that will be convoluted which has boundaries equal from
+the number of the current row to number of the current row +
+last_index_rows, the same with columns, and for all channels (either gray or
+color image are supported).
+2. For each channel
+1. Compute the convoluted image (the output) by using the index of the
+rows as the convolution_row_index, the same with columns, and loop
+over the channel.
+2. The output should be computed by getting the sum both times ( in rows
+and columns) of the element wise multiplication between the small
+image and the filter.
+2. Restart the convolution_column_index to be 1.
+3. Increment the convolution_row_index by 1.
+7. The output of this nested loop should be the convoluted image.
